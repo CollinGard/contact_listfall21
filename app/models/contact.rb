@@ -75,4 +75,37 @@ class Contact < ApplicationRecord
   # around_save
   # aruond_create
 
+   # class CreditCard < ActiveRecord::Base
+  #   before_save :encrypt_card_number
+   
+  #   private
+   
+  #     def encrypt_card_number
+  #       self.card_number = bcrypt(self.card_number)
+  #     end
+  # end
+
+  # Class method
+  # class Person < ActiveRecord::Base
+  #   # called on a class Person.by_first_name
+  #   def self.by_first_name
+  #     order(:first_name)
+  #   end
+  # end
+
+  # # instance method
+  # class Person < ActiveRecord::Base
+  #   # called on an instance @person.full_name
+  #   def full_name
+  #    "#{self.first_name} {self.last_name}"
+  #   end
+  # end
+
+  # all logic that has to do with the data will be in the model
+  # fat models skinny controllers 
+  # all logic should be in the model 
+  # controllers are handling actions 
+  # actions - CRUD, events you can do functionally in the application
+end
+
 end
